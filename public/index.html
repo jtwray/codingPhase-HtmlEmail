@@ -6,7 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css"
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <style>
+                @media only screen and(min-width: 960px){
+                  .container{
+                    width: 960px;
+                  }
+                }
+                @media only screen and(max-width: 960px){
+                  .container{
+                    width: 600px;
+                  }
+                }
+                @media only screen and(max-width: 600px){
+                  .container{
+                    width: 100%;
+                  }
+                }
+   </style>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
     <!-- start of htmlemail-->
@@ -14,10 +31,14 @@
       <tr>
         <td>
           <!-- start of container-->
-          <table width=600px align="center" cellspacing="0" cellpadding="0" border="0">
+          <table width=100% align="center" cellspacing="0" cellpadding="0" border="0">
             <!-- start of Header row-->
             <tr>
               <td>
+            <table>
+                <tr>
+                  <td>
+
                 <!-- start of left column -->
                 <table class="header-left" width=50% align="Left"  style="background: #65ffff;background: -moz-linear-gradient(-45deg, #65ffff 1%, #3696fa 100%);background: -webkit-linear-gradient(-45deg, #65ffff 1%,#3696fa 100%);
                 background: linear-gradient(135deg, #65ffff 1%,#3696fa 100%); 
@@ -43,32 +64,46 @@
                       </td>
                   </tr> 
                 </table>
+              </td>
+            
                 <!-- end of left column -->
                 <!-- start of right column -->
+                <td>
                 <table class="header-right" style=" font-weight:100; font-family: 'Open Sans','Helvetica Neue-Light','Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,'Lucida Grande',sans-serif;" width=50% align="Right"
                  cellspacing="0" cellpadding="0" border="0">
                     <tr>
                         <td>
-                          <table style=" letter-spacing: 1.5px;font-size:10px; padding:40px 0px;" width=66.7% align="center" cellspacing="0" cellpadding="0" border="0">
+                          <table style="letter-spacing: 1.5px;
+                          font-size:10px; 
+                          padding:40px 0px;" width=66.7% align="center" cellspacing="0" cellpadding="0" border="0"
+                          >
                             <tr>
-                                <td>
+                                <td width=30% style="padding:1.5%;">
                                   <a style="text-decoration:none;" href="#">ABOUT</a>
                                 </td>
-                                <td>
+                                <td width=30% style="padding:1.5%;">
                                   <a style="text-decoration:none;" href="#">CAREERS</a>
                                 </td>
-                                <td>
+                                <td width=30% style="padding:1.5%;">
                                     <a style="text-decoration:none;" href="#">CONTACT</a>
                                 </td>
                               </tr>
                         </table>
                         </td>
                       </tr>
+                      <tr>
+                        <td>
+                          <img style="padding: 15px 25px 0px 25px;" height=100%; src="img/smartwatch.png" alt="a smartwatch">
+                        </td>                        
+                      </tr>
                     </table>
-                    <img style="padding: 15px 25px 0px 25px;" height=100%; src="img/smartwatch.png" alt="a smartwatch">
                 </td>
             </tr>
             </table>
+            
+          </td>
+        </tr>
+      </table>
             <!-- end of Header row-->
             <!-- start of Let's You row-->
             <!-- start of hero lets you paragraph -->
